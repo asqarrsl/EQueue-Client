@@ -45,8 +45,8 @@ public class LoginActivity extends AppCompatActivity {
 
         backBtn = findViewById(R.id.back);
         loginBtn = findViewById(R.id.loginBtn);
-        usernameInput = findViewById(R.id.emailInput);
-        passwordInput = findViewById(R.id.passwordInput);
+        usernameInput = findViewById(R.id.email);
+        passwordInput = findViewById(R.id.password);
         stationOwnerSwitch = findViewById(R.id.ownerSwitch);
 
         //

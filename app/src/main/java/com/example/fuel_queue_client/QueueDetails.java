@@ -10,15 +10,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.equeue_client.api.APIConfig;
-import com.example.equeue_client.api.fuel_queue.IFuelQueueApi;
-import com.example.equeue_client.models.fuel_queue.FuelQueueRequest;
-import com.example.equeue_client.models.fuel_queue.FuelQueueResponse;
-import com.example.equeue_client.models.fuel_queue.QueueCustomer;
+import com.example.fuel_queue_client.api.APIConfig;
+import com.example.fuel_queue_client.api.fuel_queue.IFuelQueueApi;
+import com.example.fuel_queue_client.models.fuel_queue.QueueCustomer;
 
 import java.util.Objects;
-
-import retrofit2.Call;
 
 public class QueueDetails extends AppCompatActivity {
     ImageView backBtn;
@@ -36,12 +32,12 @@ public class QueueDetails extends AppCompatActivity {
 
         backBtn = findViewById(R.id.back);
         joinQueue = findViewById(R.id.joinQueue);
-        branchName = findViewById(R.id.branchName);
-        queueAvailability = findViewById(R.id.queueAvailability);
-        totalVehicleAmount = findViewById(R.id.totalVehicleAmount);
-        vehicleName = findViewById(R.id.vehicleName);
+        branchName = findViewById(R.id.stationName);
+        queueAvailability = findViewById(R.id.fuelAvailability);
+        totalVehicleAmount = findViewById(R.id.VehicleAmount);
+        vehicleName = findViewById(R.id.vehicleType);
         vehicleAmount = findViewById(R.id.vehicleAmount);
-        departureTime = findViewById(R.id.departureTime);
+        departureTime = findViewById(R.id.waitingTime);
 
         Station_Id =getIntent().getStringExtra("STATION_ID");
 

@@ -62,7 +62,7 @@
 
 
                 <TextView
-                    android:id="@+id/branchName"
+                    android:id="@+id/stationName"
                     android:layout_width="167dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -75,7 +75,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/queueAvailability"
+                    android:id="@+id/fuelAvailability"
                     android:layout_width="170dp"
                     android:layout_height="36dp"
                     android:layout_marginStart="40dp"
@@ -113,7 +113,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/totalVehicleAmount"
+                        android:id="@+id/VehicleAmount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -168,7 +168,7 @@
                         android:orientation="horizontal">
 
                         <EditText
-                            android:id="@+id/vehicleName"
+                            android:id="@+id/vehicleType"
                             android:layout_width="125dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="36dp"
@@ -211,13 +211,13 @@
                     android:textSize="20sp" />
 
                 <EditText
-                    android:id="@+id/departureTime"
+                    android:id="@+id/waitingTime"
                     android:layout_width="111dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginBottom="32dp"
                     android:fontFamily="@font/semibold"
-                    android:text="30 mins"
+                    android:text="30mins"
                     android:textColor="@color/teal_700"
                     android:textSize="18sp" />
 

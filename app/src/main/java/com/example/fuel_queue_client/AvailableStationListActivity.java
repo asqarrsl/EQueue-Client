@@ -76,7 +76,7 @@ public class AvailableStationListActivity extends AppCompatActivity {
                 list_subtitle = subTitle.toArray(new String[0]);;
 
 
-                listView = findViewById(R.id.listView_id);
+                listView = findViewById(R.id.stationList);
                 //set the list view to the adapter
                 ListViewAdapter adapter = new ListViewAdapter(AvailableStationListActivity.this,list_title ,list_subtitle,imageID);
                 listView.setAdapter(adapter);

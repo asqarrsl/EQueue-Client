@@ -9,13 +9,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.equeue_client.api.APIConfig;
-import com.example.equeue_client.api.fuel_station.IFuelStationApi;
-import com.example.equeue_client.models.fuel_station.FuelStationRequest;
-import com.example.equeue_client.models.fuel_station.FuelStationResponse;
+import com.example.fuel_queue_client.api.APIConfig;
+import com.example.fuel_queue_client.api.fuel_station.IFuelStationApi;
+import com.example.fuel_queue_client.models.fuel_station.FuelStationResponse;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -72,7 +70,7 @@ public class FuelStationListActivity extends AppCompatActivity {
                  list_subtitle = subTitle.toArray(new String[0]);;
 
 
-                listView = findViewById(R.id.listView_id);
+                listView = findViewById(R.id.stationList);
                 //set the list view to the adapter
                 ListViewAdapter adapter = new ListViewAdapter(FuelStationListActivity.this,list_title ,list_subtitle,imageID);
                 listView.setAdapter(adapter);
