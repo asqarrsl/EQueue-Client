@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.fuel_queue_client.database.DBHelper;
 import com.example.fuel_queue_client.models.user.User;
@@ -22,9 +21,9 @@ public class OwnerProfileActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_owner_profile);
 
-        Create=findViewById(R.id.Create_station_Owner);
-        View = findViewById(R.id.View_stations_Owner);
-        LogOut =findViewById(R.id.LogOUT_Owner);
+        Create=findViewById(R.id.add_station);
+        View = findViewById(R.id.view_all_stations);
+        LogOut =findViewById(R.id.SignOUT);
 
         //directs to the fuel station registering interface
         Create.setOnClickListener(new View.OnClickListener() {

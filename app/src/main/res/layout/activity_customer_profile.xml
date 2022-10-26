@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/View_station_customer"
+        android:id="@+id/View_station_list"
         android:layout_width="226dp"
         android:layout_height="66dp"
         android:backgroundTint="#4CAF50"
@@ -34,7 +34,7 @@
         tools:layout_editor_absoluteY="417dp" />
 
     <Button
-        android:id="@+id/LogOut_Customer"
+        android:id="@+id/SignOut_Customer"
         android:layout_width="120dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"

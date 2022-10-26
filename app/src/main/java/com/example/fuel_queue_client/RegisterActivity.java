@@ -49,9 +49,9 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         setContentView(R.layout.activity_register);
 
         backBtn = findViewById(R.id.back);
-        emailInput = findViewById(R.id.emailInput);
-        usernameInput = findViewById(R.id.usernameInput);
-        passwordInput = findViewById(R.id.passwordInput);
+        emailInput = findViewById(R.id.email);
+        usernameInput = findViewById(R.id.username);
+        passwordInput = findViewById(R.id.password);
         stationOwnerSwitch = findViewById(R.id.ownerSwitchReg);
         vehicleTypeSpinner = findViewById(R.id.spinnerVehicle);
         regBtn = findViewById(R.id.RegisterBtn);

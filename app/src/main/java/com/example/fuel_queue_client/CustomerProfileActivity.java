@@ -24,8 +24,8 @@ public class CustomerProfileActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_customer_profile);
 
-        View_list = findViewById(R.id.View_station_customer);
-        Logout  = findViewById(R.id.LogOut_Customer);
+        View_list = findViewById(R.id.View_station_list);
+        Logout  = findViewById(R.id.SignOut_Customer);
 
         // directs to the available fuel station list
         View_list.setOnClickListener(new View.OnClickListener() {
