@@ -1,4 +1,8 @@
-package com.example.fuel_queue_client.models.user;
+/*
+ * UserResponse: class - user response from the API call is represented
+ * */
+ 
+ package com.example.equeue_client.models.user;
 
 public class UserResponse {
     public UserResponse(String id, String username, String password, String role, String vehicleType) {

@@ -1,4 +1,8 @@
-package com.example.fuel_queue_client.models.fuel_station;
+/*
+ * FuelStationRequest: class - fuel station request for the API call is represented
+ * */
+ 
+ package com.example.equeue_client.models.fuel_station;
 
 public class FuelStationRequest {
 

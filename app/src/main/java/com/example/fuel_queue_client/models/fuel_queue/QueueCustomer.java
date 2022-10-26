@@ -1,4 +1,9 @@
-package com.example.fuel_queue_client.models.fuel_queue;
+
+/*
+ * QueueCustomer: class - customer in the queue is represented
+ * */
+ 
+ package com.example.equeue_client.models.fuel_queue;
 
 public class QueueCustomer {
 

@@ -1,4 +1,4 @@
-package com.example.fuel_queue_client;
+package com.example.equeue_client;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.fuel_queue_client.database.DBHelper;
-import com.example.fuel_queue_client.models.user.User;
+import com.example.equeue_client.database.DBHelper;
+import com.example.equeue_client.models.user.User;
 
 import java.util.Objects;
 

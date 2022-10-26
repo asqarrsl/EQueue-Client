@@ -1,7 +1,11 @@
-package com.example.fuel_queue_client.models.fuel_queue;
+/*
+* FuelQueueRequest: class - fuel queue request for the API call  is represented
+* */
 
-import com.example.fuel_queue_client.QueueDetails;
-import com.example.fuel_queue_client.models.user.UserRequest;
+package com.example.equeue_client.models.fuel_queue;
+
+import com.example.equeue_client.QueueDetails;
+import com.example.equeue_client.models.user.UserRequest;
 
 public class FuelQueueRequest {
 

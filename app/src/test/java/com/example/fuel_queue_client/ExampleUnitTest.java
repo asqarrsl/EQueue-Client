@@ -1,4 +1,4 @@
-package com.example.fuel_queue_client;
+package com.example.equeue_client;
 
 import org.junit.Test;
 

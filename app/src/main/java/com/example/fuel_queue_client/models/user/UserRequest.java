@@ -1,4 +1,8 @@
-package com.example.fuel_queue_client.models.user;
+/*
+ * UserRequest: class - user request for the API call is represented
+ * */
+ 
+ package com.example.equeue_client.models.user;
 
 public class UserRequest {
     private String email;

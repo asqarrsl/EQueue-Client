@@ -1,4 +1,4 @@
-package com.example.fuel_queue_client.database;
+package com.example.equeue_client.database;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -7,28 +7,37 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.fuel_queue_client.models.user.User;
+import com.example.equeue_client.models.user.User;
 
 public class DBHelper extends SQLiteOpenHelper {
     public DBHelper(Context context) {
         super(context, "database.db", null, 1);
     }
 
+    //create the user table inside sqllite db
     @Override
     public void onCreate(SQLiteDatabase DB) {
         DB.execSQL("CREATE TABLE user (id integer PRIMARY KEY AUTOINCREMENT, userId text, username text, role text)");
     }
 
+    //drop already exist table and recreates it
     @Override
     public void onUpgrade(SQLiteDatabase DB, int i, int i1) {
         DB.execSQL("DROP TABLE IF EXISTS user");
         onCreate(DB);
     }
-
+    //close the db helper
     public void close(DBHelper dbHelper) {
         dbHelper.close();
     }
 
+    /***
+     * save a user in database
+     * @param userid = id of the user in MongoDB
+     * @param username = user name of the user
+     * @param role  = type of the user (station-owner or customer)
+     * @return = boolean value
+     */
     public boolean saveUser(String userid, String username, String role){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -42,21 +51,23 @@ public class DBHelper extends SQLiteOpenHelper {
         return result != -1;
     }
 
+    /***
+     * delete user from local database
+     * @param userId = id of the user in local database
+     * @return = a boolean value
+     */
     public boolean deleteOne(int userId){
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("delete from " + "user" + " where id='" + userId + "'");
-
-
-//        Cursor cursor = db.query("user", null, null, null, null, null, null);
-//        if(cursor.moveToFirst()) {
-//            db.delete("user", "userId" + "=?",  userId);
-//        }
         db.close();
 
         return true;
     }
 
-
+    /***
+     * retrieve user object from local database
+     * @return user object
+     */
     public User getSingleUser(){
         SQLiteDatabase db = getWritableDatabase();
 

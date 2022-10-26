@@ -1,4 +1,4 @@
-package com.example.fuel_queue_client;
+package com.example.equeue_client;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,11 +10,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.fuel_queue_client.api.APIConfig;
-import com.example.fuel_queue_client.api.fuel_queue.IFuelQueueApi;
-import com.example.fuel_queue_client.models.fuel_queue.FuelQueueRequest;
-import com.example.fuel_queue_client.models.fuel_queue.FuelQueueResponse;
-import com.example.fuel_queue_client.models.fuel_queue.QueueCustomer;
+import com.example.equeue_client.api.APIConfig;
+import com.example.equeue_client.api.fuel_queue.IFuelQueueApi;
+import com.example.equeue_client.models.fuel_queue.FuelQueueRequest;
+import com.example.equeue_client.models.fuel_queue.FuelQueueResponse;
+import com.example.equeue_client.models.fuel_queue.QueueCustomer;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package com.example.fuel_queue_client;
+package com.example.equeue_client;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,12 +13,12 @@ import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.example.fuel_queue_client.api.APIConfig;
-import com.example.fuel_queue_client.api.auth.IAuthApi;
-import com.example.fuel_queue_client.database.DBHelper;
-import com.example.fuel_queue_client.models.user.UserRequest;
-import com.example.fuel_queue_client.models.user.UserResponse;
-import com.example.fuel_queue_client.utils.InputValidator;
+import com.example.equeue_client.api.APIConfig;
+import com.example.equeue_client.api.auth.IAuthApi;
+import com.example.equeue_client.database.DBHelper;
+import com.example.equeue_client.models.user.UserRequest;
+import com.example.equeue_client.models.user.UserResponse;
+import com.example.equeue_client.utils.InputValidator;
 
 import java.util.Objects;
 

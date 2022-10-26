@@ -1,6 +1,10 @@
-package com.example.fuel_queue_client.models.fuel_queue;
+/*
+ * FuelQueueResponse: class - fuel queue response from the API call is represented
+ * */
+ 
+ package com.example.equeue_client.models.fuel_queue;
 
-import com.example.fuel_queue_client.models.user.UserRequest;
+import com.example.equeue_client.models.user.UserRequest;
 
 public class FuelQueueResponse {
     private int id ;

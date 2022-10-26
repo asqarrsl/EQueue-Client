@@ -1,10 +1,10 @@
-package com.example.fuel_queue_client.api;
+package com.example.equeue_client.api;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class APIConfig {
-    public static final String BASE_URL = "https://fuel-queue-web-api.herokuapp.com/";
+    public static final String BASE_URL = "https://10.0.2.2:6184/";
     public static Retrofit retrofit = null;
 
     public static Retrofit getConfig() {

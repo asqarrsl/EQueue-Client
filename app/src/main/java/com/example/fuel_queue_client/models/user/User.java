@@ -1,4 +1,8 @@
-package com.example.fuel_queue_client.models.user;
+/*
+ * User: class - user model in local database is represented
+ * */
+ 
+ package com.example.equeue_client.models.user;
 
 public class User {
     private int id;
