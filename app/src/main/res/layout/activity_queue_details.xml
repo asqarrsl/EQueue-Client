@@ -206,7 +206,7 @@
                     android:layout_marginBottom="32dp"
                     android:background="#4CAF50"
                     android:fontFamily="@font/bold"
-                    android:text="Departure Time"
+                    android:text="Waiting Time"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20sp" />
 
@@ -217,7 +217,7 @@
                     android:layout_marginStart="50dp"
                     android:layout_marginBottom="32dp"
                     android:fontFamily="@font/semibold"
-                    android:text="2hr 30min"
+                    android:text="30 mins"
                     android:textColor="@color/teal_700"
                     android:textSize="18sp" />
 
