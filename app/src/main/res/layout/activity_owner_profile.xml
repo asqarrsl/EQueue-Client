@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OwnerProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="162dp"
+        android:layout_height="173dp"
+        android:backgroundTint="#9C27B0"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="EQueue"
+        android:textColor="#4CAF50"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <Button
+        android:id="@+id/Create_station_Owner"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Create Station"
+        app:layout_constraintBottom_toTopOf="@+id/View_stations_Owner"
+        tools:layout_editor_absoluteX="106dp" />
+
+    <Button
+        android:id="@+id/View_stations_Owner"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#4CAF50"
+        android:text="View Stations"
+        app:layout_constraintEnd_toEndOf="@+id/Create_station_Owner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Create_station_Owner"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <Button
+        android:id="@+id/LogOUT_Owner"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Log Out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="526dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

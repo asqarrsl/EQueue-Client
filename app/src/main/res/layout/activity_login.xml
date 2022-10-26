@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant100"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="EQueue"
+        android:textColor="#4CAF50"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="120dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="368dp"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="@font/medium"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Switch
+        android:id="@+id/ownerSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="524dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/semibold"
+        android:text="Shed Login?"
+        android:textColorHighlight="@color/grey"
+        android:textColorLink="@color/grey"
+        android:textSize="16sp"
+        android:thumbTint="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="42dp"
+        android:autofillHints=""
+        android:backgroundTint="#4CAF50"
+        android:ems="10"
+        android:fontFamily="@font/medium"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorLink="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="288dp"
+        android:autofillHints=""
+        android:backgroundTint="#4CAF50"
+        android:ems="10"
+        android:fontFamily="@font/medium"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorLink="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/heading"
+        android:text="Sign-in"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

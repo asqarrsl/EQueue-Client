@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".FuelStationListActivity">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bold"
+        android:text="EQueue"
+        android:textColor="#4CAF50"
+        android:textSize="34sp" />
+
+    <ListView
+        android:id="@+id/listView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="523dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="73dp"
+        android:background="#B5EABA" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_above="@+id/listView_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="11dp"
+        android:text="Available Fuel Stations"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="24sp" />
+</RelativeLayout>

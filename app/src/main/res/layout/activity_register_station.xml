@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/heading"
+        android:text="Add Station"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <EditText
+        android:id="@+id/Registration_numberInput"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:backgroundTint="#4CAF50"
+        android:ems="10"
+        android:fontFamily="@font/medium"
+        android:hint="Fuel Station Number"
+        android:inputType="text"
+        android:textColorLink="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:backgroundTint="#4CAF50"
+        android:ems="10"
+        android:fontFamily="@font/medium"
+        android:hint="Location"
+        android:inputType="text"
+        android:textColorLink="#2196F3"
+        app:layout_constraintEnd_toEndOf="@+id/stationNameInput"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/stationNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/stationNameInput" />
+
+    <EditText
+        android:id="@+id/noOfPumps"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:backgroundTint="#4CAF50"
+        android:ems="10"
+        android:fontFamily="@font/medium"
+        android:hint="No of Pump Machines"
+        android:inputType="number"
+        android:textColorLink="#2196F3"
+        app:layout_constraintEnd_toEndOf="@+id/locationInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/locationInput"
+        app:layout_constraintTop_toBottomOf="@+id/locationInput" />
+
+    <EditText
+        android:id="@+id/stationNameInput"
+        android:layout_width="327dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:autofillHints=""
+        android:backgroundTint="#4CAF50"
+        android:ems="10"
+        android:fontFamily="@font/medium"
+        android:hint="Fuel Station Name"
+        android:inputType="textPersonName"
+        android:textColorLink="#2196F3"
+        app:layout_constraintEnd_toEndOf="@+id/Registration_numberInput"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Registration_numberInput"
+        app:layout_constraintTop_toBottomOf="@+id/Registration_numberInput" />
+
+    <Button
+        android:id="@+id/stationRegisterBtn"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="@font/medium"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noOfPumps"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:srcCompat="@android:drawable/ic_menu_today"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
